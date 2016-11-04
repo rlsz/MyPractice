@@ -39,3 +39,44 @@ c:\users\pc_liss\documents\visual studio 2015\Projects\MyPracticeSolution\MyPrac
 c:\users\pc_liss\documents\visual studio 2015\Projects\MyPracticeSolution\MyPractice\obj\Debug\MyPractice.csprojResolveAssemblyReference.cache
 c:\users\pc_liss\documents\visual studio 2015\Projects\MyPracticeSolution\MyPractice\obj\Debug\MyPractice.dll
 c:\users\pc_liss\documents\visual studio 2015\Projects\MyPracticeSolution\MyPractice\obj\Debug\MyPractice.pdb
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\ApplicationInsights.config
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\roslyn\csc.exe
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\roslyn\System.Collections.Immutable.dll
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\roslyn\System.Reflection.Metadata.dll
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\roslyn\vbc.exe
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\roslyn\VBCSCompiler.exe
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\roslyn\VBCSCompiler.exe.config
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\MyPractice.dll.config
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\MyPractice.dll
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\MyPractice.pdb
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\ICSharpCode.SharpZipLib.dll
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\Microsoft.AI.Agent.Intercept.dll
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\Microsoft.AI.DependencyCollector.dll
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\Microsoft.AI.Web.dll
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\Microsoft.AI.WindowsServer.dll
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\Microsoft.ApplicationInsights.dll
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\Newtonsoft.Json.dll
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\NPOI.dll
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\NPOI.OOXML.dll
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\NPOI.OpenXml4Net.dll
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\NPOI.OpenXmlFormats.dll
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\Microsoft.AI.DependencyCollector.xml
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\Microsoft.AI.Web.xml
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\Microsoft.AI.WindowsServer.xml
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\Microsoft.ApplicationInsights.xml
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\Newtonsoft.Json.xml
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\bin\NPOI.xml
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\obj\Debug\MyPractice.csprojResolveAssemblyReference.cache
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\obj\Debug\MyPractice.dll
+D:\github_Map\MyPractice\MyPracticeSolution\MyPractice\obj\Debug\MyPractice.pdb

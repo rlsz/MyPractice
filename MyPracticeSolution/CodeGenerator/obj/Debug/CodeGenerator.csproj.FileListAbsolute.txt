@@ -27,3 +27,32 @@ c:\users\pc_liss\documents\visual studio 2015\Projects\MyPracticeSolution\CodeGe
 c:\users\pc_liss\documents\visual studio 2015\Projects\MyPracticeSolution\CodeGenerator\obj\Debug\CodeGenerator.csprojResolveAssemblyReference.cache
 c:\users\pc_liss\documents\visual studio 2015\Projects\MyPracticeSolution\CodeGenerator\obj\Debug\CodeGenerator.exe
 c:\users\pc_liss\documents\visual studio 2015\Projects\MyPracticeSolution\CodeGenerator\obj\Debug\CodeGenerator.pdb
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\CodeGenerator.exe.config
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\obj\Debug\CodeGenerator.exe
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\obj\Debug\CodeGenerator.pdb
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\ApplicationInsights.config
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\roslyn\csc.exe
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\roslyn\System.Collections.Immutable.dll
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\roslyn\System.Reflection.Metadata.dll
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\roslyn\vbc.exe
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\roslyn\VBCSCompiler.exe
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\roslyn\VBCSCompiler.exe.config
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\CodeGenerator.exe
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\CodeGenerator.pdb
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\MyPractice.dll
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\Newtonsoft.Json.dll
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\NPOI.dll
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\NPOI.OOXML.dll
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\NPOI.OpenXml4Net.dll
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\MyPractice.pdb
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\Newtonsoft.Json.xml
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\bin\Debug\NPOI.xml
+D:\github_Map\MyPractice\MyPracticeSolution\CodeGenerator\obj\Debug\CodeGenerator.csprojResolveAssemblyReference.cache

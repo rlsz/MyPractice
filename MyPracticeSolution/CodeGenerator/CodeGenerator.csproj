@@ -75,6 +75,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ForWebStudy\ForWebStudy.csproj">
+      <Project>{BF3CB170-131D-4C68-B341-56D9E5601EEB}</Project>
+      <Name>ForWebStudy</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MyPractice\MyPractice.csproj">
       <Project>{EF97B833-08C5-4589-9FCB-7D1D1A5B9689}</Project>
       <Name>MyPractice</Name>

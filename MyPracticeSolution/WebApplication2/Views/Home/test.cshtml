@@ -1,0 +1,101 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+    <div><textarea id="input" style="width:42%;height:300px;"></textarea><ul id="tree" style="width:42%;height:300px;float:right;"></ul></div>
+    <div id="show">
+        <h1>test</h1>
+    </div>
+    <script type="text/javascript">
+        var i = $("#show");
+        function goin() {
+            if (i.children().size() > 0) {
+                i = i.children().first();
+            }
+        }
+        function goout() {
+            i = i.parent();
+        }
+        function gonext() {
+            if (i.next().size() > 0) {
+                i = i.next();
+            }
+        }
+        function goprev() {
+            if (i.prev().size() > 0) {
+                i = i.prev();
+            }
+        }
+        function append(tag) {
+            i.append("<" + tag + "></" + tag + ">");
+        }
+
+        function execInput(input) {
+           
+            var result = eval(input);
+
+            showTree();
+        }
+
+        function showTree() {
+            $("#tree").html("");
+            //var ul = $("<ul></ul>").appendTo($("#tree"));
+            addItem($("#tree"), $("#show"));
+        }
+        function addItem(ttt, ele) {
+            var name = ele.prop('tagName');
+            var li = $("<li>" + name + "</li>").appendTo(ttt);
+            
+            if (ele.is(i)) {
+                li.css("color", "red");
+            } else {
+                li.css("color", "black");
+            }
+            if (ele.children().size() > 0) {
+                var ul = $("<ul></ul>").appendTo(li);
+                ele.children().each(function (index, element) {
+                    addItem(ul, $(element));
+                })
+            }
+        }
+        $("#input").keyup(function (e) {
+            if (e.keyCode == 13) {
+                var text = $(e.currentTarget).val();
+                text = text.replace(/\n/g, "");
+                $(e.currentTarget).val("");
+                execInput(text);
+            }
+            if (e.keyCode == 37) {
+                goout();
+                $(e.currentTarget).val("");
+                showTree();
+            }
+            if (e.keyCode == 38) {
+                goprev();
+                $(e.currentTarget).val("");
+                showTree();
+            }
+            if (e.keyCode == 39) {
+                goin();
+                $(e.currentTarget).val("");
+                showTree();
+            }
+            if (e.keyCode == 40) {
+                gonext();
+                $(e.currentTarget).val("");
+                showTree();
+            }
+        });
+        showTree();
+    </script>
+</body>
+</html>

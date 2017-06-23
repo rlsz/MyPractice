@@ -1,0 +1,52 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>test1</title>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+    <div id="tip"></div>
+    <div id="input"></div>
+    <script type="text/javascript">
+
+        var dic = {
+            "fire": function () {
+                $("#tip").html("you make a fire");
+            },
+            "make it red": function () {
+                $("#tip").css("color", "red");
+            }
+        };
+        var input = [];
+        function fire() {
+            var key = input.join("");
+            if (dic[key]) {
+                dic[key]();
+            }
+        }
+
+        $(document).keyup(function (e) {
+           
+            if (e.keyCode == 13) {
+                fire();
+                input = [];
+            }
+            if (e.keyCode >= 65 && e.keyCode <= 90) {
+                input.push(e.key);
+            }
+            if (e.keyCode == 32) {
+                input.push(e.key);
+            }
+            $("#input").html(input.join(""));
+        });
+        $(document).focus();
+    </script>
+</body>
+</html>

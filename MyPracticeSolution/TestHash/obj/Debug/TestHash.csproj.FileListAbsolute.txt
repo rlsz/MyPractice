@@ -1,0 +1,10 @@
+D:\github_Map\MyPractice\MyPracticeSolution\TestHash\bin\Debug\TestHash.exe.config
+D:\github_Map\MyPractice\MyPracticeSolution\TestHash\bin\Debug\TestHash.exe
+D:\github_Map\MyPractice\MyPracticeSolution\TestHash\bin\Debug\TestHash.pdb
+D:\github_Map\MyPractice\MyPracticeSolution\TestHash\obj\Debug\TestHash.csprojResolveAssemblyReference.cache
+D:\github_Map\MyPractice\MyPracticeSolution\TestHash\obj\Debug\TestHash.exe
+D:\github_Map\MyPractice\MyPracticeSolution\TestHash\obj\Debug\TestHash.pdb
+D:\github_Map\MyPractice\MyPracticeSolution\TestHash\bin\Debug\TestHash.exe.manifest
+D:\github_Map\MyPractice\MyPracticeSolution\TestHash\bin\Debug\TestHash.application
+D:\github_Map\MyPractice\MyPracticeSolution\TestHash\obj\Debug\TestHash.exe.manifest
+D:\github_Map\MyPractice\MyPracticeSolution\TestHash\obj\Debug\TestHash.application

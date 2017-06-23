@@ -1,0 +1,208 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<script src="~/Scripts/MyPagenation.js"></script>
+
+
+@*<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>*@
+
+@*<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>*@
+<div class="row">
+    <div>测试area</div>
+    <a href="/Activity1/Home/Index">go to Activity1 area action</a><br />
+    <a href="/Activity1">go to Activity1 area default</a><br />
+    @Html.ActionLink("test", "Index", "Home", new { area = "Activity1" }, null);
+</div>
+<div class="row">
+    数据展示区域，表单
+</div>
+<div class="row">
+    <div id="test"></div>
+    <div id="test1"></div>
+</div>
+<div class="row">
+    <div id="test2"></div>
+    <button onclick="test()">test</button>
+</div>
+
+<div class="row">
+    <div id="test666">666<input id="hahaha" value="hahaha"/></div>
+    <div id="test666">666<input id="hahaha" value="hahaha" /></div>
+    <div id="test666">666<input id="hahaha" value="hahaha"/></div>
+    <div id="test666">666<input id="hahaha" value="hahaha"/></div>
+    <div id="test666">666<input id="hahaha" value="hahaha"/></div>
+</div>
+<script type="text/javascript">
+    function test() {
+        $("#test").MyPagenation('dispose');
+        //$("#test1").MyPagenation({
+        //    dataType: "text",
+        //    url: "/home/unknow"
+        //});
+    }
+    function FuncChain() {
+        this.funcList = [];
+    }
+    //console.dir(Object.prototype.toString);
+    FuncChain.prototype.toString = function () {
+        return "test";
+    }
+    var aaa = new FuncChain();
+    console.dir(aaa.toString());
+    var ccc = new FuncChain();
+    var bbb = aaa + ccc;
+    console.dir(bbb);
+
+    
+    var TypeTest = {
+        Check: function (obj, type) {
+            return Object.prototype.toString.apply(obj) === '[object ' + type + ']';
+        },
+        isArray: function (obj) {
+            return this.Check(obj, "Array");
+        },
+        isObject: function (obj) {
+            return this.Check(obj, "Object");
+        },
+        isString: function (obj) {
+            return this.Check(obj, "String");
+        },
+        isNumber: function (obj) {
+            return this.Check(obj, "Number");
+        },
+        isBoolean: function (obj) {
+            return this.Check(obj, "Boolean");
+        },
+        isNaN: function (obj) {
+            return isNaN(obj);
+        },
+        isFunction: function (obj) {
+            return this.Check(obj, "Function");
+        }
+    }
+    var a = function (aaa) {
+        var asd = 2;
+    };
+    //console.log(Number.isNaN(a));
+    //console.log(Object.prototype.toString.apply(a));
+
+    
+    //console.dir(this);
+    //function foo() {
+    //    console.dir(this);
+    //    console.log(this.a);
+    //}
+    //var a = 2;
+    //foo();
+    $(function () {
+        return;
+        var a=058.8;
+        console.log(JSON.stringify(a));
+        console.log(typeof JSON.parse("88.9"));
+        return;
+        console.log(NaN || 0);
+
+        console.log(parseFloat("3.1415926"));
+        console.log(parseFloat("3.1415926",2));
+
+        console.log($("#test666").size());
+        console.log($("div#test666").size());
+        return;
+
+        console.log($.fn.MyPagenation);
+        //console.log($("#test").MyPagenation());
+        //$.fn.MyPagenation.default.pageOmitHtml = "hahaha";
+        var pagenation= $("#test").MyPagenation({
+            url: "/home/test",
+            showOmit:true,
+            success: function (data) {
+                console.log(data);
+            }
+        });
+        //console.log(pagenation);
+        //$("#test").MyPagenation("getData");
+        //pagenation.getData(2);
+
+       
+
+        //console.log(pagenation);
+        //pagenation.getData = function () {
+        //    alert("test");
+        //}
+        //pagenation.__proto__.getData = function () {
+        //    alert("test");
+        //}
+
+        
+        
+        //var a = $(".my-pagenation").MyPagenation("randerPageNumber", 100, 30, 2);
+        
+        //console.info(a);
+
+
+    })
+    function test11111(){
+        function doasync(id, _cb) {
+            var s = Math.round(Math.random() * 1000);
+            setTimeout(function () {
+                _cb(id, "some result" + id);
+            }, s);
+        }
+
+        var cache = [];
+        var outputOrder = 1;
+        var lock = false;
+        function output() {
+            if (cache[outputOrder] && cache[outputOrder].isResolved) {
+                if (lock) {
+                    //模拟资源锁
+                    return;
+                }
+                lock = true;
+                console.log(cache[outputOrder].result);
+                setTimeout(function () {
+                    //模拟耗时操作
+                    lock = false;
+                    ++outputOrder;
+                    output();
+                }, 500);
+            }
+        }
+        for (var i = 1; i <= 10; ++i) {
+            cache[i] = {
+                result: null,
+                isResolved: false
+            };
+            doasync(i, function (id, result) {
+                console.log("第" + id + "个回掉已解决");
+                cache[id].result = result;
+                cache[id].isResolved = true;
+                output();
+            });
+        }
+    }
+</script>

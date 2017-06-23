@@ -1,0 +1,10 @@
+D:\github_Map\MyPractice\MyPracticeSolution\GetMD5OrSHA1\bin\Debug\GetMD5OrSHA1.exe.config
+D:\github_Map\MyPractice\MyPracticeSolution\GetMD5OrSHA1\bin\Debug\GetMD5OrSHA1.exe
+D:\github_Map\MyPractice\MyPracticeSolution\GetMD5OrSHA1\bin\Debug\GetMD5OrSHA1.pdb
+D:\github_Map\MyPractice\MyPracticeSolution\GetMD5OrSHA1\obj\Debug\GetMD5OrSHA1.csprojResolveAssemblyReference.cache
+D:\github_Map\MyPractice\MyPracticeSolution\GetMD5OrSHA1\obj\Debug\GetMD5OrSHA1.exe
+D:\github_Map\MyPractice\MyPracticeSolution\GetMD5OrSHA1\obj\Debug\GetMD5OrSHA1.pdb
+D:\github_Map\MyPractice\MyPracticeSolution\GetMD5OrSHA1\bin\Debug\GetMD5OrSHA1.exe.manifest
+D:\github_Map\MyPractice\MyPracticeSolution\GetMD5OrSHA1\bin\Debug\GetMD5OrSHA1.application
+D:\github_Map\MyPractice\MyPracticeSolution\GetMD5OrSHA1\obj\Debug\GetMD5OrSHA1.exe.manifest
+D:\github_Map\MyPractice\MyPracticeSolution\GetMD5OrSHA1\obj\Debug\GetMD5OrSHA1.application

@@ -1,0 +1,101 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<link href="~/Content/html_f9_main.css" rel="stylesheet" />
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <img id="test112" onerror="window.onerror.apply(window, arguments);"/>
+    </div>
+</div>
+<div class="row">
+    <div>测试ajax请求，设置filter</div>
+    <div><input type="button" id="test" value="Send Ajax"/></div>
+</div>
+<div id="test1234" class="row">
+    <table id="hahaha">
+        <tr>
+            <td><input type="checkbox"/></td>
+            <td><input id="hahaha1"  type="hidden" value="3"/></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" /></td>
+            <td><input id="hahaha1" value="4" type="hidden" /></td>
+        </tr>
+    </table>
+</div>
+<script type="text/javascript">
+    var GetDateByJs = function (addYear, addMonth, addDay) {
+        var myDate = new Date();
+        var year = myDate.getFullYear();
+        var month = (myDate.getMonth() + 1);
+        var day = myDate.getDate();
+
+        if (addYear === undefined) {
+            addYear = 0;
+        }
+        if (addMonth === undefined) {
+            addMonth = 0;
+        }
+        if (addDay === undefined) {
+            addDay = 0;
+        }
+        myDate.setFullYear(year + addYear, month - 1 + addMonth, day + addDay);
+        year = myDate.getFullYear();
+        month = (myDate.getMonth() + 1);
+        day = myDate.getDate();
+        if (month < 10) {
+            month = "0" + month;
+        }
+        if (day < 10) {
+            day = "0" + day;
+        }
+        return year + "-" + month + "-" + day;
+    };
+
+    $(function () {
+        //$("#hahaha :checkbox").each(function (i) {
+        //    console.log($(this).parent().parent().find("input:hidden").val());
+        //})
+
+
+        $("#test").click(function (e) {
+            $.ajax({
+                url: "Home/AjaxTest",
+                type: "post",
+                data: { param1: 1234, param2: "asdkljasd" },
+                dataType: "json",
+                success: function (result) {
+                    console.log(result);
+                },
+                error: function () {
+                    console.log(arguments);
+                }
+            });
+        });
+        $("#test112").attr("src", "test/asdas/sds");
+        asd;
+    });
+</script>

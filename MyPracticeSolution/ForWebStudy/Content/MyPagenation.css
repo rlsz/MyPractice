@@ -1,0 +1,94 @@
+﻿.my-pagenation {
+    overflow: hidden;
+    display: block;
+    clear: both;
+}
+
+    .my-pagenation li {
+        float: left;
+        margin-left: 10px;
+        color: #666;
+        height: 20px;
+        line-height: 20px;
+        overflow: hidden;
+    }
+
+        .my-pagenation li input {
+            width: 43px;
+            height: 16px;
+            line-height: 16px;
+            border: 1px solid #bfbfbf;
+            box-shadow: 1px 1px 3px #e3e3e3 inset;
+            color: #666;
+        }
+
+        .my-pagenation li a {
+            color: #666;
+            font-size: 12px;
+            font-weight: normal;
+            text-decoration: none;
+        }
+
+            .my-pagenation li a:hover {
+                color: #ff4900;
+                text-decoration: underline;
+            }
+
+            .my-pagenation li a.disabled {
+                color: #b3b3b3;
+                cursor: default;
+            }
+
+                .my-pagenation li a.disabled:hover {
+                    color: #b3b3b3;
+                    text-decoration: none;
+                }
+
+    .my-pagenation li {
+        padding: 0;
+        height: auto;
+    }
+
+        .my-pagenation li a {
+            padding: 0 4px;
+            height: 26px;
+            line-height: 24px;
+            min-width: 28px;
+            text-align: center;
+            border: solid 1px #dddddd;
+            color: #151515;
+            font-size: 14px;
+            font-weight: normal;
+            font-family: 'Microsoft Yahei';
+            text-decoration: none;
+            text-align: center;
+            background: #ffffff;
+            display: block;
+        }
+
+            .my-pagenation li a:hover, .my-pagenation li a:active {
+                border: solid 1px #ff4900;
+                color: #ff4900;
+            }
+
+            .my-pagenation li a.disabled {
+                cursor: not-allowed;
+                color: #dddddd;
+            }
+
+                .my-pagenation li a.disabled:hover, .my-pagenation li a.disabled:active {
+                    border: solid 1px #dddddd;
+                }
+
+        .my-pagenation li.active a {
+            background: #ff4900;
+            border: solid 1px #ff4900;
+            color: #ffffff;
+        }
+
+
+    .my-pagenation ul {
+        padding: 0;
+        list-style: none;
+        float: right;
+    }

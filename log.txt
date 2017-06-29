@@ -1,0 +1,129 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Net;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+
+namespace CreeperTool
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var test = new HtmlAnalysis("http://www.cnblogs.com/vajoy/p/4902935.html");
+            test.output("Angular");
+
+            var list = test.urls.Select(c =>
+            {
+                try
+                {
+                    return new HtmlAnalysis(c);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("web请求失败,\r\nurl:" + c + "\r\nmessage:" + ex.Message);
+                }
+                return null;
+            }).Where(c => c != null).ToList();
+            list.ForEach(c => c.output("Angular"));
+
+
+            //var test = new HtmlAnalysis("https://stackoverflow.com/");
+
+      }
+
+
+
+        public class HtmlAnalysis
+        {
+            static HtmlAnalysis()
+            {
+                specialCharacter.Add("&amp;","&");
+            }
+            public string html { get; set; }
+            public List<string> urls { get; set; }
+            public string domain { get; set; }
+            public string url { get; set; }
+            
+            private static readonly Regex domainReg = new Regex("http://[^/]+/", RegexOptions.Compiled);
+            public HtmlAnalysis(string url)
+            {
+                this.url = url;
+                this.domain = domainReg.Match(this.url).Value;
+                this.html = LoadHtml(this.url);
+                this.urls = GetUrls(this.html);
+            }
+
+            private string LoadHtml(string url)
+            {
+                WebRequest request = WebRequest.Create(url);
+                request.Credentials = CredentialCache.DefaultCredentials;
+                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+                if (response.StatusCode != HttpStatusCode.OK)
+                {
+                    throw new Exception("web请求失败,\r\nurl:" + url + "\r\n，StatusDescription:" + response.StatusDescription);
+                }
+                Stream dataStream = response.GetResponseStream();
+                StreamReader reader = new StreamReader(dataStream);
+                string responseFromServer = reader.ReadToEnd();
+                reader.Close();
+                dataStream.Close();
+                response.Close();
+                return responseFromServer;
+            }
+
+            private readonly static Regex urlReg = new Regex("href=\"([^\"]+)\"");
+            private static Dictionary<string, string> specialCharacter = new Dictionary<string, string>();
+            private static string ReplaceSpecialCharacter(string str)
+            {
+                foreach(var item in specialCharacter)
+                {
+                    str = str.Replace(item.Key, item.Value);
+                }
+                return str;
+            }
+
+            private List<string> GetUrls(string html)
+            {
+                var test = urlReg.Matches(html);
+                List<string> list = new List<string>();
+                foreach (Match item in test)
+                {
+                    var url = item.Groups[1].Value;
+                    if (url.StartsWith("http://") || url.StartsWith("https://"))
+                    {
+                        list.Add(url);
+                    }
+                    else if(url.StartsWith("/"))
+                    {
+                        list.Add(this.domain.TrimEnd('/') + url);
+                    }
+                }
+                list.Remove(this.url);
+                return list.Distinct().Select(c => ReplaceSpecialCharacter(c)).ToList();
+            }
+
+            public List<string> ExtractMsg(string keyword)
+            {
+                var reg = new Regex("[^$]{0,50}" + keyword + "[^$]{0,50}", RegexOptions.IgnoreCase);
+                var matches = reg.Matches(this.html);
+                List<string> list = new List<string>();
+                foreach (Match item in matches)
+                {
+                    list.Add(item.Value);
+                }
+                return list;
+            }
+            public void output(string keyword)
+            {
+                Console.WriteLine("查询成功,\r\nurl:" + this.url);
+                var temp = this.ExtractMsg(keyword);
+                temp.ForEach(d => Console.WriteLine("\r\nmatch:" + d));
+                Console.WriteLine();
+            }
+        }
+    }
+}
